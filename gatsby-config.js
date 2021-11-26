@@ -6,7 +6,7 @@ module.exports = {
       summary: `who lives and studies Computer Science in Indore, India.`,
     },
     description: `My blog for sharing all things tech and community, built with GatsbyJS as a part of #100DaysOfCode`,
-    siteUrl: `https://developer.twitter.com/en/docs/authentication/overview`,
+    siteUrl: `http://blog.simran.codes/`,
     social: {
       twitter: `justdev_sim`,
     },
@@ -121,7 +121,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon.svg`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-react-helmet`,
