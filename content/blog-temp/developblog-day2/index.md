@@ -4,6 +4,8 @@ date: "2021-11-28T11:34:32.169Z"
 description: "A step-by-step tutorial on how I made this blog with Gatsby and how you can make it too!"
 ---
 
+Hi! Hope you're having a good day and keeping safe.
+
 As a part of the #100DaysOfCode challenge, I decided to create a blog to document my journey with the challenge.
 
 This blog is built using GatsbyJS, and I learned the basics of Gatsby in a couple of days. If you know ReactJS, Gatsby is easy to catch on to.
@@ -47,8 +49,8 @@ We're all set to begin development!
 1. Using your terminal, navigate to the directory where you want to create the project.
 1. To create a new project, we use the `gatsby new` command, we can install the starter in 2 ways:
 
-> 1. `gatsby new {project-name} {starter-repo-link}`
-> 1. `gatsby new {project-name} {GithHub_username/repo_name}`
+   > 1. `gatsby new {project-name} {starter-repo-link}`
+   > 1. `gatsby new {project-name} {GithHub_username/repo_name}`
 
 For example, I want to call my project 'my-blog':
 
@@ -63,20 +65,20 @@ For example, I want to call my project 'my-blog':
    > `cd my-blog`
 1. Install all dependencies using `npm` or `yarn`.
 
-> `\my-blog> npm install`
+   > `\my-blog> npm install`
 
-**OR**
+   **OR**
 
-> `\my-blog> yarn`
+   > `\my-blog> yarn`
 
 1. Run `gatsby develop`. The terminal output will look like this.
    ![Gatsby Develop](./gatsby-blog.png)
 
-The website will now be accessible at [http://localhost:8000/](http://localhost:8000/). As long as the development server is running, you can view your website here. It automatically recompiles every time you save changes as long as 'gatsby develop' is running.
+   The website will now be accessible at [http://localhost:8000/](http://localhost:8000/). As long as the development server is running, you can view your website here. It automatically recompiles everytime you save changes as long as 'gatsby develop' is running.
 
-The GraphiQL interface at [http://localhost:8000/\_\_\_graphql](http://localhost:8000/___graphql).
+   The GraphiQL interface at [http://localhost:8000/\_\_\_graphql](http://localhost:8000/___graphql).
 
-It is okay if you don't have experience working with GraphQL, I have yet to learn it and it is not needed to build this blog thanks to the starter!
+   It is okay if you don't have experience working with GraphQL, I have yet to learn it and it is not needed to build this blog thanks to the starter!
 
 #### Step 3:
 
@@ -89,9 +91,9 @@ It is okay if you don't have experience working with GraphQL, I have yet to lear
 1. Now, sign in to [GitHub](https://github.com/) and [create a new empty repository](https://docs.github.com/en/get-started/quickstart/create-a-repo). Copy the link to the repo. For example: _https://github.com/SimranMakhija7/blog_
 1. In your terminal, in your local repository, run the following command to link to GitHub repo:
 
-`git remote add origin {repo-link}`
+   `git remote add origin {repo-link}`
 
-Here, replace the {repo-link} with the link copied in the previous step.
+   Here, replace the {repo-link} with link copied in the previous step.
 
 1. Push the initial commit to GitHub using the command `git push -u origin main`.
 
@@ -106,93 +108,47 @@ Our repository is now on GitHub! Now let's make some changes so that the blog is
 
 ```js
 siteMetadata: {
-   title: `Gatsby Starter Blog`,
-   author: {
-     name: `Kyle Mathews`,
-     summary: `who lives and works in San Francisco building useful things.`,
-   },
-   description: `A starter blog demonstrating what Gatsby can do.`,
-   siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
-   social: {
-     twitter: `kylemathews`,
-   },
- },
+    title: `Gatsby Starter Blog`,
+    author: {
+      name: `Kyle Mathews`,
+      summary: `who lives and works in San Francisco building useful things.`,
+    },
+    description: `A starter blog demonstrating what Gatsby can do.`,
+    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    social: {
+      twitter: `kylemathews`,
+    },
+  },
 ```
 
 Replace with your details, except for `siteUrl` for now, like so:
 
 ```js
 siteMetadata: {
-   title: `Simran's Blog`,
-   author: {
-     name: `Simran Makhija`,
-     summary: `who lives and studies Computer Science in Indore, India.`,
-   },
-   description: `My blog for sharing all things tech and community, built with GatsbyJS as a part of #100DaysOfCode`,
-   siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
-   social: {
-     twitter: `justdev_sim`,
-   },
- },
+    title: `Simran's Blog`,
+    author: {
+      name: `Simran Makhija`,
+      summary: `who lives and studies Computer Science in Indore, India.`,
+    },
+    description: `My blog for sharing all things tech and community, built with GatsbyJS as a part of #100DaysOfCode`,
+    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    social: {
+      twitter: `justdev_sim`,
+    },
+  },
 ```
 
-1. Replace `src/images/profile-pic.png` with your own picture. Make sure the name of the image is `profile-pic.png`.
+1. Replace `src/images/profile-pic.png` with your own picture. Make sure the name of the image id `profile-pic.png`.
 
 Now, the blog has your name, title info and image!
-The site will now look like this:
+The site wil now look like this:
 ![Blog with your details](./gatsby-blog-ss.png)
 
 #### Step 5:
 
-##### Create your first blog post
+##### Write your first blog post!
 
-Now, let's take a look at how our blogs are stored and organised.
-
-1. The `content\blog` directory stores all your blog posts.
-1. Each blog post has its own subdirectory. The name of this subdirectory corresponds to the route at which the blog will be rendered.
-
-For example: The blog within the `hello-world` folder can be found at _{base-url}/hello-world_ (http://localhost:8000/hello-world on our local server)
-
-1. The `index.md` file contains the markdown source for your blog. The default `hello-world` contains a markdown cheatsheet of sorts that I have stored in a separate file and refer to for syntax.
-
-Now, let's go ahead and write our own first blog.
-
-- Delete all folders within `content/blog`.
-- Create a new folder `hello-world`.
-- Within this folder, create a new file `index.md`. This is where we'll write our markdown source.
-- In the file, add the frontmatter:
-
-```md
----
-title: Hello World
-date: "2021-11-26T22:00:32.169Z"
-description: "Hi! I am a student developer. Nice to meet you!"
----
-```
-
-This front matter corresponds to the name, date and blog description we see on the home page like so:
-![Blog description on home page](./frontmatter.png)
-
-- Below the frontmatter, you can include the entire content of your blog.
-  Here's how my `content/blog/hello-world/index.md` looks:
-
-```md
----
-title: Hello World
-date: "2021-11-26T22:00:32.169Z"
-description: "Hi! I am a student developer. Nice to meet you!"
----
-
-Hi! I am **Simran Makhija** 🙋🏻‍♀️ Nice to meet you 🤝
-I am a final year **Computer Science & Engineering** student from Indore, India.👩‍💻
-....
-Thank you for dropping by!🌸
-```
-
-- Save all changes and push them to your GitHub repository.
-
-This is it on developing the blog site. Hope it was easy to follow and helpful.
-
-In my next blog, I will be writing about deploying this site to the internet.
-
-Thank you for reading! See you then :)
+1. All your blog posts will be stored in the `content` folder.
+1. The name of the folder containing the blog corresponds to its route. For example: `hello-world` contains a blog post that can be viewed at http://localhost:8000/hello-world (or {base-url}/hello-world in a deployed site).
+1. The `index.md` file inside the blog folder contains the markdown source of your blog post.
+1. If you wish to add attachments such as images to your post, it is advisable to add them within the blog folder.
