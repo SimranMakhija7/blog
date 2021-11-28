@@ -10,16 +10,29 @@ This blog is built using GatsbyJS, and I learned the basics of Gatsby in a coupl
 
 Without further ado, let's dive into how you can develop a blog just like this for sharing your own thoughts and journeys.
 
+## Table of Contents
+
+1. [What is GatsbyJS?](#WhatisGatsbyJS?)
+1. [What are starters in Gatsby?](#starters)
+1. [System Prerequisites](#prereq)
+1. [Developing the site](#develop)
+
+<a name="WhatisGatsbyJS?"></a>
+
 ### What is GatsbyJS?
 
 Gatsby is a React-based open-source framework for creating websites and apps.
 
-## What are starters in Gatsby?
+<a name="starters"></a>
+
+### What are starters in Gatsby?
 
 To develop our blog we will be using the [gatsby-starter-blog starter](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-blog), but what is a starter?
 
 - It is a boilerplate Gatsby site that helps jump-start the development process.
 - Starters are maintained by the community, for the community.
+
+<a name="prereq"></a>
 
 ### System Prerequisites
 
@@ -38,7 +51,19 @@ Use [CodeSandbox](https://codesandbox.io) to develop right from your browser! Cr
 
 We're all set to begin development!
 
+<a name="develop"></a>
+
 ### Developing the site
+
+#### Steps to develop
+
+1. [Create a new gatsby project and install the starter](#1)
+1. [Run the website locally](#2)
+1. [Create a GitHub repository and push the code to the repository](#3)
+1. [Change author details in `gatsby-config.js`](#4)
+1. [Create your first blog post](#5)
+
+<a name="1"></a>
 
 #### Step 1:
 
@@ -54,6 +79,8 @@ For example, I want to call my project 'my-blog':
 
 > 1.  `gatsby new my-blog https://github.com/gatsbyjs/gatsby-starter-blog`
 > 1.  `gatsby new my-blog gatsbyjs/gatsby-starter-blog`
+
+<a name="1"></a>
 
 #### Step 2:
 
@@ -103,9 +130,11 @@ The GraphiQL interface at [http://localhost:8000/\_\_\_graphql](http://localhost
 
 It is okay if you don't have experience working with GraphQL, I have yet to learn it and it is not needed to build this blog thanks to the starter!
 
+<a name="3"></a>
+
 #### Step 3:
 
-##### Create a GitHub repository and push the code to the repository.
+##### Create a GitHub repository and push the code to the repository
 
 1. Navigate to the project directory in the terminal.
 1. Run the command `git init` to initialise a local git repository.
@@ -121,6 +150,8 @@ Here, replace the {repo-link} with the link copied in the previous step.
 1. Push the initial commit to GitHub using the command `git push -u origin main`.
 
 Our repository is now on GitHub! Now let's make some changes so that the blog is ours!
+
+<a name="4"></a>
 
 #### Step 4:
 
@@ -166,6 +197,8 @@ siteMetadata: {
 Now, the blog has your name, title info and image!
 The site will now look like this:
 ![Blog with your details](./gatsby-blog-ss.png)
+
+<a name="5"></a>
 
 #### Step 5:
 
