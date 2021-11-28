@@ -3,13 +3,13 @@ module.exports = {
     title: `Simran's Blog`,
     author: {
       name: `Simran Makhija`,
-      summary: `who lives and studies Computer Science in Indore, India.`,
+      summary: `who lives and studies Computer Science in Indore, India.`
     },
     description: `My blog for sharing all things tech and community, built with GatsbyJS as a part of #100DaysOfCode`,
     siteUrl: `http://blog.simran.codes/`,
     social: {
-      twitter: `justdev_sim`,
-    },
+      twitter: `justdev_sim`
+    }
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -17,15 +17,15 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
-        name: `blog`,
-      },
+        name: `blog`
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+        path: `${__dirname}/src/images`
+      }
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -34,20 +34,20 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 630,
-            },
+              maxWidth: 630
+            }
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
+              wrapperStyle: `margin-bottom: 1.0725rem`
+            }
           },
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`,
-        ],
-      },
+          `gatsby-remark-smartypants`
+        ]
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -81,7 +81,7 @@ module.exports = {
                   date: node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + node.fields.slug,
                   guid: site.siteMetadata.siteUrl + node.fields.slug,
-                  custom_elements: [{ "content:encoded": node.html }],
+                  custom_elements: [{ "content:encoded": node.html }]
                 })
               })
             },
@@ -105,10 +105,10 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Gatsby Starter Blog RSS Feed",
-          },
-        ],
-      },
+            title: "Gatsby Starter Blog RSS Feed"
+          }
+        ]
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -121,12 +121,12 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/icon.svg`, // This path is relative to the root of the site.
-      },
+        icon: `src/images/icon.png` // This path is relative to the root of the site.
+      }
     },
-    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-react-helmet`
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-  ],
+  ]
 }
