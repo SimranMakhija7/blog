@@ -70,7 +70,32 @@ For example, I want to call my project 'my-blog':
 > `\my-blog> yarn`
 
 1. Run `gatsby develop`. The terminal output will look like this.
-   ![Gatsby Develop](./gatsby-blog.png)
+
+```js
+success open and validate gatsby-configs, load plugins - 7.188s
+.
+.
+.
+success extract queries from components - 6.805s
+success write out requires - 0.107s
+success run page queries - 0.041s - 1/1 24.10/s
+⠀
+You can now view my-blog in the browser.
+⠀
+  http://localhost:8000/
+⠀
+View GraphiQL, an in-browser IDE, to explore your site's data and schema
+⠀
+  http://localhost:8000/___graphql
+⠀
+Note that the development build is not optimized.
+To create a production build, use gatsby build
+⠀
+success Building development bundle - 18.418s
+success Writing page-data.json files to public directory - 1.640s - 2/3 1.83/s
+
+
+```
 
 The website will now be accessible at [http://localhost:8000/](http://localhost:8000/). As long as the development server is running, you can view your website here. It automatically recompiles every time you save changes as long as 'gatsby develop' is running.
 
