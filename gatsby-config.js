@@ -12,6 +12,14 @@ module.exports = {
     }
   },
   plugins: [
+    {
+      resolve: "@chakra-ui/gatsby-plugin",
+      options: {
+        isResettingCSS: true,
+        isUsingColorMode: true
+      }
+    },
+
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -31,7 +39,6 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          '@chakra-ui/gatsby-plugin',
           {
             resolve: `gatsby-remark-images`,
             options: {

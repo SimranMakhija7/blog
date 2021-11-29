@@ -8,3 +8,7 @@ import "./src/style.css"
 
 // Highlighting for code blocks
 import "prismjs/themes/prism.css"
+
+import { rootWrapperElement as wrap } from "./root-wrapper"
+
+export const wrapPageElement = wrap
