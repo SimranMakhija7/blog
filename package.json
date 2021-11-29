@@ -8,7 +8,6 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
-    "@chakra-ui/gatsby-plugin": "^2.0.2",
     "gatsby": "^4.2.0",
     "gatsby-cli": "^4.2.0",
     "gatsby-plugin-feed": "^4.2.0",
