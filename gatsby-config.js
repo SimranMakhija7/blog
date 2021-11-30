@@ -12,6 +12,7 @@ module.exports = {
     }
   },
   plugins: [
+    "gatsby-plugin-use-dark-mode",
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -31,7 +32,6 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          '@chakra-ui/gatsby-plugin',
           {
             resolve: `gatsby-remark-images`,
             options: {
