@@ -251,6 +251,6 @@ Thank you for dropping by!🌸
 
 This is it on developing the blog site. Hope it was easy to follow and helpful.
 
-In my next blog, I will be writing about deploying this site to the internet.
+To deploy this blog site to Netlify (for free😉) follow [this step-by-step guide](https://www.netlify.com/blog/2016/02/24/a-step-by-step-guide-gatsby-on-netlify/)!
 
 Thank you for reading! See you then :)
