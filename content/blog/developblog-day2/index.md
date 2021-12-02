@@ -3,6 +3,7 @@ title: Developing this blog
 date: "2021-11-28T11:34:32.169Z"
 description: "A step-by-step tutorial on how I made this blog with Gatsby and how you can make it too!"
 ---
+![Header Image](./header.png)
 
 As a part of the #100DaysOfCode challenge, I decided to create a blog to document my journey with the challenge.
 
