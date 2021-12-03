@@ -4,6 +4,7 @@ date: "2021-12-03T15:44:32.169Z"
 description: "Notes on Open Source, git and GitHub - neog lecture 2"
 ---
 ![header](./header.png)
+
 I worked through [Lecture 2](https://neog.camp/guide/lesson-two) of [neogcamp](https://neog.camp/) today and here are my notes/takeaways from it. 
 
 Since, I do know some basics and fundamentals, so I skipped parts of the video as suggested and I tried to do the exercises and dig deeper into the homework assignments.
