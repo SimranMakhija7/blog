@@ -1,7 +1,7 @@
 ---
 title: Day 6/100 - neogcamp lecture 1 notes
 date: "2021-12-02T20:47:32.169Z"
-description: "What I learned as I worked through the first lesson of neogcamp"
+description: "JavaScript basics I learned as I worked through the first lesson of neogcamp"
 ---
 ![Header Image](./header.png)
 
