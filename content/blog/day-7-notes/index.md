@@ -1,6 +1,6 @@
 ---
 title: Day 7/100 - Open Source, git and GitHub
-date: "2021-12-02T20:47:32.169Z"
+date: "2021-12-03T15:44:32.169Z"
 description: "Notes on Open Source, git and GitHub - neog lecture 2"
 ---
 ![header](./header.png)
