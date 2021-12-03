@@ -16,7 +16,7 @@ When you play Minecraft, sometimes when you try to add something new to your hou
 What if you had your house's older version sitting somewhere and you could see your changes and undo them or see *exactly* where you made a mistake that caused it to burn?
 This is what git does, it keeps track of all your changes to a file (house) and you can look at them at anytime to see what broke your code (burned your house) or you can restore an older working version (an undamaged house).
 
-#### What is Open Source? (As per [opensource.org](https://opensource.org/osd))
+#### What is Open Source? 
 
 A software is an open-source software if they allow it to be freely used, modified and shared, not if just the source code is publicly available.
 
